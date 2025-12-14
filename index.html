@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sasanka Karunarathna | Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Sasanka Karunarathna - Software Engineering Undergraduate specializing in Web & Mobile Development. Check out my portfolio projects.">
+    <meta name="keywords" content="software engineer, web developer, mobile developer, MERN stack, Kotlin, React Native, portfolio, SLIIT">
+    <meta name="author" content="Sasanka Karunarathna">
+    
+    <!-- Open Graph tags for social media -->
+    <meta property="og:title" content="Sasanka Karunarathna | Portfolio">
+    <meta property="og:description" content="Software Engineering Undergraduate | Full-Stack Developer">
+    <meta property="og:image" content="./assets/profilePic.jpeg">
+    <meta property="og:url" content="https://sasiiii02.github.io">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Analytics (Optional - Add your ID) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-YOURID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YOURID');
+    </script> -->
+</head>
+<body>
+    
+    <!-- Loading Animation -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
+        <div class="logo">
+            <span class="logo-text">Sasanka</span>
+            <span class="logo-dot">.</span>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="nav-contact-btn">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <span class="logo-text">Sasanka</span>
+            <span class="logo-dot">.</span>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PROFILE SECTION -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <div class="profile-image-wrapper">
+                <img src="./assets/profilePic.jpeg" alt="Sasanka Karunarathna Profile Picture" />
+                <div class="profile-frame"></div>
+            </div>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">
+                <span class="title-line">Sasanka</span>
+                <span class="title-line">Karunarathna</span>
+            </h1>
+            <p class="section__text__p2">Full-Stack Developer | Web & Mobile Applications</p>
+
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/SasankaKarunarathnaResume.pdf')">
+                    <i class="fas fa-download"></i> Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    <i class="fas fa-envelope"></i> Contact Me
+                </button>
+            </div>
+
+            <div id="socials-container">
+                <div class="social-icon" onclick="location.href='https://www.linkedin.com/in/sasikaru/'">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="social-icon" onclick="location.href='https://github.com/sasiiii02'">
+                    <i class="fab fa-github"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container experience-card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Experience</h3>
+                        <p>Web & Mobile Development<br/>MERN | Kotlin | Java</p>
+                    </div>
+
+                    <div class="details-container education-card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Education</h3>
+                        <p>BSc (Hons) Software Engineering<br/>SLIIT | GPA: 3.9 / 4.0</p>
+                    </div>
+
+                    <div class="details-container certification-card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Certifications</h3>
+                        <p>Android Development<br/>Web Technologies<br/>Database Management</p>
+                    </div>
+                </div>
+
+                <div class="text-container">
+                    <p>
+                        I'm a dedicated 3rd-year Software Engineering undergraduate at SLIIT with a strong passion 
+                        for building modern, scalable applications. I specialize in both web and mobile development 
+                        using technologies like MERN Stack, Java, Kotlin, and Android Studio.  
+                        <br><br>
+                        I've built full-stack systems, mobile apps, and UI-driven projects that solve real-world 
+                        problems. I love learning, designing clean interfaces, and turning ideas into functional 
+                        products. My goal is to secure an internship where I can grow, contribute, and build 
+                        industry-level solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrow-down" onclick="location.href='./#services'">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services">
+        <p class="section__text__p1">What I Offer</p>
+        <h1 class="title">Services</h1>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h2 class="service-title">Web Development</h2>
+                <div class="service-list">
+                    <div class="service-item">
+                        <i class="fas fa-check"></i>
+                        <span>Responsive Websites</span>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-check"></i>
+                        <span>MERN Stack Applications</span>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-check"></i>
+                        <span>REST API Development</span>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-check"></i>
+                        <span>UI/UX Implementation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h2 class="service-title">Mobile Development</h2>
+                <div class="service-list">
+                    <div class="service-item">
+                        <i class="fas fa-check"></i>
+                        <span>Android Apps (Kotlin)</span>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-check"></i>
+                        <span>React Native Apps</span>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-check"></i>
+                        <span>Local Storage Solutions</span>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-check"></i>
+                        <span>Data Visualization</span>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-check"></i>
+                        <span>UI/UX Prototyping</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h2 class="service-title">Design & Tools</h2>
+                <div class="service-list">
+                    <div class="service-item">
+                        <i class="fas fa-check"></i>
+                        <span>Figma UI & Wireframes</span>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-check"></i>
+                        <span>Database Design</span>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-check"></i>
+                        <span>Git / GitHub Workflow</span>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-check"></i>
+                        <span>System Planning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrow-down" onclick="location.href='./#experience'">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills & Expertise</h1>
+
+        <div class="skills-container">
+            <div class="skill-category">
+                <div class="skill-category-header">
+                    <i class="fas fa-laptop-code"></i>
+                    <h2>Frontend Development</h2>
+                </div>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML</span>
+                            <span class="skill-level-label">Advanced</span>
+                        </div>
+                        <div class="skill-dots">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">CSS</span>
+                            <span class="skill-level-label">Advanced</span>
+                        </div>
+                        <div class="skill-dots">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-level-label">Intermediate</span>
+                        </div>
+                        <div class="skill-dots">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">React</span>
+                            <span class="skill-level-label">Intermediate</span>
+                        </div>
+                        <div class="skill-dots">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Figma</span>
+                            <span class="skill-level-label">Intermediate</span>
+                        </div>
+                        <div class="skill-dots">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-category-header">
+                    <i class="fas fa-server"></i>
+                    <h2>Backend Development</h2>
+                </div>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Node.js</span>
+                            <span class="skill-level-label">Intermediate</span>
+                        </div>
+                        <div class="skill-dots">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Express.js</span>
+                            <span class="skill-level-label">Intermediate</span>
+                        </div>
+                        <div class="skill-dots">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">MongoDB</span>
+                            <span class="skill-level-label">Intermediate</span>
+                        </div>
+                        <div class="skill-dots">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">SQL / SQLite</span>
+                            <span class="skill-level-label">Basic</span>
+                        </div>
+                        <div class="skill-dots">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                            <div class="skill-dot"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">PostgreSQL</span>
+                            <span class="skill-level-label">Basic</span>
+                        </div>
+                        <div class="skill-dots">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                            <div class="skill-dot"></div>
+                            <div class="skill-dot"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-category-header">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h2>Mobile Development</h2>
+                </div>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Kotlin</span>
+                            <span class="skill-level-label">Intermediate</span>
+                        </div>
+                        <div class="skill-dots">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Android Studio</span>
+                            <span class="skill-level-label">Intermediate</span>
+                        </div>
+                        <div class="skill-dots">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">XML UI</span>
+                            <span class="skill-level-label">Intermediate</span>
+                        </div>
+                        <div class="skill-dots">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">React Native</span>
+                            <span class="skill-level-label">Intermediate</span>
+                        </div>
+                        <div class="skill-dots">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Firebase</span>
+                            <span class="skill-level-label">Intermediate</span>
+                        </div>
+                        <div class="skill-dots">
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot active"></div>
+                            <div class="skill-dot"></div>
+                            <div class="skill-dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrow-down" onclick="location.href='./#projects'">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+
+        <div class="projects-grid">
+            <!-- PROJECT 1: Pet Care Management System -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./assets/petcare.png" alt="Pet Care Management System" loading="lazy" />
+                    <div class="project-overlay">
+                        <div class="btn-container">
+                            <button class="project-view-btn" onclick="location.href='https://github.com/sasiiii02/PetSystem'">
+                                <i class="fab fa-github"></i> Code
+                            </button>
+                            <button class="project-view-btn demo-btn" onclick="location.href='#projects'">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Pet Care Management System</h3>
+                    <p class="project-description">Full-stack system for managing pet care services with appointment scheduling and customer management.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 2: Personal Finance Tracker -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./assets/finance.png" alt="Personal Finance Tracker" loading="lazy" />
+                    <div class="project-overlay">
+                        <div class="btn-container">
+                            <button class="project-view-btn" onclick="location.href='https://github.com/sasiiii02/FinanceTracker'">
+                                <i class="fab fa-github"></i> Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Personal Finance Tracker</h3>
+                    <p class="project-description">Android application for tracking expenses, income, and financial goals with data visualization.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Kotlin</span>
+                        <span class="tech-tag">Android</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">MPChart</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 3: Smart Waste Management System -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./assets/waste.png" alt="Smart Waste Management System" loading="lazy" />
+                    <div class="project-overlay">
+                        <div class="btn-container">
+                            <button class="project-view-btn" onclick="location.href='https://github.com/sasiiii02/Smart-Waste-Management'">
+                                <i class="fab fa-github"></i> Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Smart Waste Management System</h3>
+                    <p class="project-description">IoT-based waste monitoring system with real-time fill level tracking and optimized collection routes.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">SpringBoot</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 4: EcoConnect App -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./assets/eco.png" alt="EcoConnect App" loading="lazy" />
+                    <div class="project-overlay">
+                        <div class="btn-container">
+                            <button class="project-view-btn" onclick="location.href='https://github.com/sasiiii02/EcoConnect-App'">
+                                <i class="fab fa-github"></i> Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">EcoConnect App</h3>
+                    <p class="project-description">Environmental sustainability app connecting users with eco-friendly products, recycling points, and green initiatives.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Expo</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">TypeScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 5: Medical Appointment System -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./assets/medical.png" alt="Medical Appointment System" loading="lazy" />
+                    <div class="project-overlay">
+                        <div class="btn-container">
+                            <button class="project-view-btn" onclick="location.href='https://github.com/sasiiii02/e-channeling'">
+                                <i class="fab fa-github"></i> Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Medical Appointment System</h3>
+                    <p class="project-description">Online platform for booking medical appointments with doctor profiles and scheduling system.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Servlet</span>
+                        <span class="tech-tag">JSP</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 6: Movie Ticket Booking App -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./assets/movie.png" alt="Movie Ticket Booking" loading="lazy" />
+                    <div class="project-overlay">
+                        <div class="btn-container">
+                            <button class="project-view-btn" onclick="location.href='https://github.com/sasiiii02/MovieTicketBookingApp'">
+                                <i class="fab fa-github"></i> Code
+                            </button>
+                            <button class="project-view-btn demo-btn" onclick="window.open('https://www.figma.com/prototype-link', '_blank')">
+                                <i class="fab fa-figma"></i> Prototype
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Movie Ticket Booking App</h3>
+                    <p class="project-description">UI/UX design prototype for a movie ticket booking application with seat selection.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">UI/UX</span>
+                        <span class="tech-tag">Prototyping</span>
+                        <span class="tech-tag">Wireframing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrow-down" onclick="location.href='./#contact'">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+
+        <div class="contact-wrapper">
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email</h3>
+                <p><a href="mailto:sasikaru15@gmail.com">sasikaru15@gmail.com</a></p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <h3>LinkedIn</h3>
+                <p><a href="https://www.linkedin.com/in/sasikaru/" target="_blank">linkedin.com/in/sasikaru</a></p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fab fa-github"></i>
+                </div>
+                <h3>GitHub</h3>
+                <p><a href="https://github.com/sasiiii02" target="_blank">github.com/sasiiii02</a></p>
+            </div>
+        </div>
+
+        <!-- Optional Contact Form -->
+        <div class="contact-form">
+            <h3>Send me a message</h3>
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn btn-color-1">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>Sasanka</span>
+                <span class="logo-dot">.</span>
+            </div>
+            <p class="footer-tagline">Building digital experiences, one line of code at a time.</p>
+            
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#experience">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/sasikaru/" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/sasiiii02" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            
+            <p class="footer-copyright">© 2025 Sasanka Karunarathna. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
