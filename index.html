@@ -141,13 +141,6 @@
                         <p>BSc (Hons) Software Engineering<br/>SLIIT | GPA: 3.9 / 4.0</p>
                     </div>
 
-                    <div class="details-container certification-card">
-                        <div class="icon-wrapper">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <h3>Certifications</h3>
-                        <p>Android Development<br/>Web Technologies<br/>Database Management</p>
-                    </div>
                 </div>
 
                 <div class="text-container">
@@ -165,6 +158,138 @@
             </div>
         </div>
 
+        <div class="arrow-down" onclick="location.href='./#services'">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- CERTIFICATES SECTION -->
+    <section id="certificates">
+        <p class="section__text__p1">My Learning Journey</p>
+        <h1 class="title">Certificates & Achievements</h1>
+        
+        <div class="certificates-container">
+            <div class="certificates-grid">
+                <!-- Certificate 1: AWS Lambda Foundations -->
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3 class="certificate-title">AWS Lambda Foundations</h3>
+                    <p class="certificate-issuer">Amazon Web Services (AWS)</p>
+                    <p class="certificate-date">Issued Jan 2026</p>
+                    <p class="certificate-description">Serverless computing, Lambda functions, event-driven architecture on AWS</p>
+                    <div class="certificate-actions">
+                        <button class="certificate-link" onclick="openCertificate('./certificates/803aef34-ecfd-448a-92cc-9ee2f764f850.pdf')">
+                            <i class="fas fa-external-link-alt"></i> View Certificate
+                        </button>
+                        <button class="certificate-download" onclick="downloadCertificate('./certificates/803aef34-ecfd-448a-92cc-9ee2f764f850.pdf', 'AWS-Lambda-Foundations.pdf')">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Certificate 2: Linux for Beginners -->
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fab fa-linux"></i>
+                    </div>
+                    <h3 class="certificate-title">Linux for Beginners</h3>
+                    <p class="certificate-issuer">Alison</p>
+                    <p class="certificate-date">Issued Jan 2026</p>
+                    <p class="certificate-description">Linux fundamentals, command line operations, system administration basics</p>
+                    <div class="certificate-actions">
+                        <button class="certificate-link" onclick="viewAlisonCertificate()">
+                            <i class="fas fa-external-link-alt"></i> View Certificate
+                        </button>
+                        <button class="certificate-download" onclick="downloadCertificate('./certificates/linux-certificate.pdf', 'Linux-for-Beginners.pdf')">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Certificate 3: Programming in Python for beginners -->
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3 class="certificate-title">Programming in Python for Beginners</h3>
+                    <p class="certificate-issuer">University of Moratuwa</p>
+                    <p class="certificate-date">Issued Jan 2026</p>
+                    <p class="certificate-description">Python fundamentals, data structures, algorithms, and basic programming concepts</p>
+                    <div class="certificate-actions">
+                        <button class="certificate-link" onclick="openCertificate('./certificates/Python_for_Beginners_E-Certificate.pdf')">
+                            <i class="fas fa-external-link-alt"></i> View Certificate
+                        </button>
+                        <button class="certificate-download" onclick="downloadCertificate('./certificates/Python_for_Beginners_E-Certificate.pdf', 'Python-for-Beginners-University-of-Moratuwa.pdf')">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Certificate 4: AWS Technical Essentials -->
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3 class="certificate-title">AWS Technical Essentials</h3>
+                    <p class="certificate-issuer">Amazon Web Services (AWS)</p>
+                    <p class="certificate-date">Issued Jan 2026</p>
+                    <p class="certificate-description">Core AWS services, cloud concepts, security, architecture, and pricing</p>
+                    <div class="certificate-actions">
+                        <button class="certificate-link" onclick="openCertificate('./certificates/d3289ec6-b59b-4718-b597-05eaf4c7b004.pdf')">
+                            <i class="fas fa-external-link-alt"></i> View Certificate
+                        </button>
+                        <button class="certificate-download" onclick="downloadCertificate('./certificates/d3289ec6-b59b-4718-b597-05eaf4c7b004.pdf', 'AWS-Technical-Essentials.pdf')">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Certificate 5: AWS Cloud Practitioner Essentials -->
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3 class="certificate-title">AWS Cloud Practitioner Essentials</h3>
+                    <p class="certificate-issuer">Amazon Web Services (AWS)</p>
+                    <p class="certificate-date">Issued Jan 2026</p>
+                    <p class="certificate-description">Cloud concepts, AWS services, security, architecture, pricing, and support</p>
+                    <div class="certificate-actions">
+                        <button class="certificate-link" onclick="openCertificate('./certificates/AWS.pdf')">
+                            <i class="fas fa-external-link-alt"></i> View Certificate
+                        </button>
+                        <button class="certificate-download" onclick="downloadCertificate('./certificates/AWS.pdf', 'AWS-Cloud-Practitioner-Essentials.pdf')">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Certificate 6: Dean's List Achievement -->
+                <div class="certificate-card achievement-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="certificate-title">Dean's List Award</h3>
+                    <p class="certificate-issuer">SLIIT | Software Engineering</p>
+                    <p class="certificate-date">2023, 2024</p>
+                    <p class="certificate-description">Academic excellence recognition for maintaining outstanding GPA (3.9/4.0)</p>
+                    <div class="certificate-actions">
+                        <button class="certificate-link" onclick="showDeanListImages()">
+                            <i class="fas fa-images"></i> View Achievement
+                        </button>
+                        <button class="certificate-download" onclick="downloadDeanListImages()">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="certificates-note">
+            <p><i class="fas fa-info-circle"></i> All certificates are verified and available upon request</p>
+        </div>
+        
         <div class="arrow-down" onclick="location.href='./#services'">
             <i class="fas fa-chevron-down"></i>
         </div>
